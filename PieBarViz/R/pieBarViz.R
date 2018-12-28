@@ -1,5 +1,9 @@
-
-
+#' The Pie Bar Vizualisation
+#'
+#' This function allows you to easily create a visualisation using a pie and bar chart.
+#' @param Dataset The Dataframe you want to visualise. It should only have two columns of the form <Label (Char), Proportion (Numeric)>
+#' @param Stacked Do you want a stacked bar chart? Defaults to FALSE
+#' @return a plot from ggplot2
 
 pieBar <- function(Dataset, Stacked = FALSE) {
   library(ggplot2)
@@ -7,7 +11,6 @@ pieBar <- function(Dataset, Stacked = FALSE) {
   library(RColorBrewer)
   library(cowplot)
   library(grid)
-
   Dataset[, 2] <- as.numeric(as.character(Dataset[, 2]))
   PieChart <-
     dplyr::filter(Dataset, (Dataset[, 2] == max(Dataset[, 2])))

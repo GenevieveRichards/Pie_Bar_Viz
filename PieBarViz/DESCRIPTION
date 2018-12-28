@@ -7,6 +7,5 @@ Maintainer: Genevieve Richards<genevievecrichards@gmail.com>
 Description: This package only contains one function that can be used to create a visualisation that utilizes Pie and Bar Charts together. 
     The function takes a a dataframe in the form <label, proportion as well as a boolean that specifies whether you would like to use a stacked or dodge bar chart. 
     It will find the largest proportion on the data as one wedge in the pie chart and sum the rest of the proportions into an 'Other' wedges. The bar chart will then show the proportion of the 'Other' wedges based on the data. 
-
 Encoding: UTF-8
 LazyData: true
